@@ -23,7 +23,7 @@ To achieve the desired goal, you will need following prerequisites installed
 3. Another goal of the challenge is to implement masking logic but in such a way that data analysts can understand it is masked. Also had to keep in mind that masking logic does not alter the length of masked data to maintain consistency. There are many ways to do it but I went with replacing the data to be masked with punds signs which is easier for anyone to understand that it is a classified information.
 
 # Run
-Assuming all the prerequisites are satisfied.
+Assuming all the prerequisites are satisfied. Run the following commands on Terminal.
 ```
 docker-compose up
 ```
@@ -38,14 +38,11 @@ docker run fetch-rewards
 
 # Local tests
 
-1.
-'''
-awslocal sqs receive-message--queue-urlhttp://localhost:4566/000000000000/login-queue`
-'''
+1. Following command will display a message from AWS sqs queue(if successfully connected) using AWS local
+   
+  * awslocal sqs receive-message--queue-urlhttp://localhost:4566/000000000000/login-queue`
 
-This will display a message from AWS sqs queue using AWS local
-
-2. To verify if the table was created in postgres or not follow the following SQL commands
+3. To verify if the table was created in postgres or not follow the following SQL commands
 
   * psql -d postgres -U postgres  -p 5432 -h localhost -W
   * postgres=# select * from user_logins;
