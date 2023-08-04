@@ -14,7 +14,7 @@ db_password = 'postgres'
 
 # Masking function for device_id and ip
 def mask_field(field_value):
-    # Replace first 3 characters with pound signs for data analysts to understand
+    # Replace first 3 characters with pound signs for data analysts to understand the masking
     return '###' + field_value[3:]
 
 # Function to process the SQS messages and store data in PostgreSQL
@@ -64,7 +64,7 @@ def process_messages():
         cur.close()
         conn.close()
 
-        print("Processing completed successfully.")
+        print("Process completed successfully.")
     except Exception as e:
         print("Error:", e)
 
