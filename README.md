@@ -20,7 +20,7 @@ To achieve the desired goal, you will need following prerequisites installed
 2. Create a Python script, "script.py" to interact with the SQS Queue, transform the data, and store it in the PostgreSQL database
    * I used Boto3 (AWS SDK for Python) to interact with the SQS Queue
    * To connect to the PostgreSQL database I used Python PostgreSQL driver, "psycopg2"
-3. Another goal of the challenge is to implement masking logic but in such a way that data analysts can understand it is masked. Also had to keep in mind that masking logic does not alter the length of masked data to maintain consistency. There are many ways to do it but I went with replacing the data to be masked with punds signs which is easier for anyone to understand that it is a classified information.
+3. Another goal of the challenge is to implement masking logic but in such a way that data analysts can understand it is masked. Also had to keep in mind that masking logic does not alter the length of masked data to maintain consistency. There are many ways to do it but I went with replacing the data to be masked with pound signs which is easier for anyone to understand that it is a classified information.
 
 # Run
 Assuming all the prerequisites are satisfied. Run the following commands on Terminal.
