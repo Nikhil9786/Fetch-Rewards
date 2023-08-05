@@ -47,4 +47,7 @@ docker run fetch-rewards
   * psql -d postgres -U postgres  -p 5432 -h localhost -W
   * postgres=# select * from user_logins;
 
+# Note
+
+Answers to questions asked in the assignment are in the questions.txt file
  
