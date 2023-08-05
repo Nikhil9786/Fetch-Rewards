@@ -15,7 +15,7 @@ To achieve the desired goal, you will need following prerequisites installed
 # Concept/Steps I followed
 
 1. Create Docker Compose file, "docker-compose.yml" to define the services for LocalStack (providing SQS Queue) and PostgreSQL
-   * Configured LocalStack to use a custom Docker image that has the pre-loaded SQS Queue data(using default ports)
+   * Configure LocalStack to use a custom Docker image that has the pre-loaded SQS Queue data(using default ports)
    * Configure PostgreSQL to use a custom Docker image with the user_logins table pre-created(5432 default port)
 2. Create a Python script, "script.py" to interact with the SQS Queue, transform the data, and store it in the PostgreSQL database
    * I used Boto3 (AWS SDK for Python) to interact with the SQS Queue
