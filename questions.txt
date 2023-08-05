@@ -1,0 +1,27 @@
+Que - How would you deploy this application in production?
+
+Ans -   1. Choose a cloud provider (AWS or Azure)
+        2. Set up virtual machines or containers for application components
+        3. Use a managed database service (Amazon RDS, Azure Database for PostgreSQL) for PostgreSQL database to ensure scalability
+        4. Dockerize your application components, including the Python app and PostgreSQL and create dockerfile which contain all dependencies
+        5. Use container orchestration tools like Kubernetes to manage and scale your application and later deploy them to kubernetes cluster ensuring resources are properly allocated
+        6. Implement a CI/CD pipeline to automate code testing, building Docker images, and deploying to production
+        7. Configure horizontal and vertical scaling for the application components to handle varying workloads and implement load balancing
+        8. Implement access control and authentication mechanisms
+        9. Implement automated testing, including unit tests, integration tests, and end-to-end tests.
+
+Que - What other components would you want to add to make this production ready?
+
+Ans - Can add load balancer to distribute traffic, auto-scaling, integrate caching mechanisms
+
+Que - How can this application scale with a growing dataset?
+
+Ans - I think the same thinsg as I said in above answer, adding load balancer and auto-scaling (horizontal and vertical) will help with this
+
+Que - How can PII be recovered later on?
+
+Ans - It depends on a lot of facotrs like data retention policies of the company, legal and regulatory compliance and then individual privacy requirements. Make sure the ocmpany has these and other required documents well-defined and available if in need of recovering data.
+
+Que - What are the assumptions you made?
+
+Ans - Preqrequisites are already installed and the person testing this will require familiarity with programming languages like Python and yml files. Also familiarity with Docker and SQL is required.
