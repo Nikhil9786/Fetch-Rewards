@@ -16,7 +16,7 @@ Ans - Can add load balancer to distribute traffic, auto-scaling, integrate cachi
 
 Que - How can this application scale with a growing dataset?
 
-Ans - I think the same thinsg as I said in above answer, adding load balancer and auto-scaling (horizontal and vertical) will help with this
+Ans - I think as explained in the second question, adding load balancer and auto-scaling (horizontal and vertical) will help with the scaling of application with larger datasets in future.
 
 Que - How can PII be recovered later on?
 
