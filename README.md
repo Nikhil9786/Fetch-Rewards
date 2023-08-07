@@ -38,7 +38,7 @@ docker run fetch-rewards
 
 # Local tests
 
-1. Following command will display a message from AWS sqs queue(if successfully connected) using AWS local
+1. Following command will display a message from AWS sqs queue(after it's successfully connected) using AWS local
    
   * awslocal sqs receive-message--queue-urlhttp://localhost:4566/000000000000/login-queue`
 
