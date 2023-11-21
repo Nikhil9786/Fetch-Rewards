@@ -49,5 +49,5 @@ docker run fetch-rewards
 
 # Note
 
-Answers to questions asked in the assignment are in the questions.txt file
+Answers to questions asked in the assignment(part of an online assessment) are in the questions.txt file
  
